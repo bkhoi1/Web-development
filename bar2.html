@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FutureHub</title>
+    <style>
+        /* Navbar styling */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #222;
+            color: #fff;
+            padding: 15px;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .navbar ul li a:hover {
+            background-color: #444;
+        }
+
+        /* Body padding to prevent content from hiding behind navbar */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding-top: 70px;
+            background-color: #f4f4f9;
+        }
+
+        /* Section styling */
+        section {
+            padding: 50px;
+            margin: 20px auto;
+            width: 90%;
+            max-width: 1000px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        /* Product section styles */
+        .product {
+            display: flex;
+            gap: 20px;
+            padding: 20px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .product img {
+            width: 100px;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .product-details {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .product-name {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .product-price {
+            color: #e63946;
+            font-size: 16px;
+        }
+
+        /* Login/Register form */
+        .form-container {
+            width: 300px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            background-color: #fff;
+            border-radius: 8px;
+            margin: 20px auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="navbar" id="navbar">
+        <h2>FutureHub</h2>
+        <ul>
+            <li><a href="#robots">Robots</a></li>
+            <li><a href="#gadgets"> Đồng hồ, Camera</a></li>
+            <li><a href="#accessories">Phụ kiện</a></li>
+            <li><a href="#login">Login</a></li>
+        </ul>
+    </div>
+
+    <!-- Sections for each category -->
+    <section id="robots">
+        <h3>Robots</h3>
+        <div class="product">
+            <img src="https://jola.vn/cdn/720/Product/jz4Opms2R/Anki%20Vector%202.0%20-%20S%E1%BB%B1%20tr%E1%BB%9F%20l%E1%BA%A1i%20c%E1%BB%A7a%20Robot%20tr%C3%AD%20tu%E1%BB%87%20nh%C3%A2n%20t%E1%BA%A1o%201.jpg" alt="Robot 1">
+            <div class="product-details">
+                <div class="product-name">Anki Vector 2.0</div>
+                <div class="product-price">9,590,000đ</div>
+                <p>Anki Vector 2.0 là một sản phẩm Robot trí tuệ nhân tạo mới từ Digital Dream Lab với những tính năng thông minh. Anki Vector 2.0 có thể lắng nghe, trả lời các câu hỏi của bạn, biểu hiện cảm xúc,... như một chú thú cưng biết tuốt trong gia đình.
+
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="gadgets">
+        <h3>Đồng hồ, Camera</h3>
+        <div class="product">
+            <img src="https://bizweb.dktcdn.net/100/464/221/products/av-watch8-2-06122022.png?v=1720690131703" alt="Gadget 1">
+            <div class="product-details">
+                <div class="product-name">Smartwatch Pro series 8</div>
+                <div class="product-price">490.000₫</div>
+                <p> 
+                    Đồng hồ thông minh Watch 8 Pro Max, Smartwatch Nghe gọi, Theo dõi Sức khỏe, Chống nước, Nhận thông báo dùng cho Nam nữ</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="accessories">
+        <h3>Phụ kiện</h3>
+        <div class="product">
+            <img src="https://minhtuanmobile.com/uploads/products/012121-241014035609.png" alt="Accessory 1">
+            <div class="product-details">
+                <div class="product-name"> Pin sạc dự phòng Innostyle 10.000 mAh PowerGo Smart AI</div>
+                <div class="product-price">190,000đ</div>
+                <p>Công nghệ Smart Ai tự điều chỉnh dòng điện phù hợp với thiết kệ hiện đại.
+                 Bộ sạc di động nhỏ gọn và dung lượng cao cho mọi thiết bị.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Login/Register form -->
+    <section id="login">
+        <div class="form-container">
+            <h2 id="form-title">Login</h2>
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button onclick="handleLogin()">Login</button>
+            <p id="toggle-form">
+                Don't have an account? <a href="#" onclick="toggleForm()">Register here</a>
+            </p>
+        </div>
+    </section>
+
+    <script>
+        // Toggle form
+        let isLogin = true;
+
+        function toggleForm() {
+            const formTitle = document.getElementById("form-title");
+            const toggleText = document.getElementById("toggle-form");
+            if (isLogin) {
+                formTitle.innerText = "Register";
+                toggleText.innerHTML = 'Already have an account? <a href="#" onclick="toggleForm()">Login here</a>';
+                isLogin = false;
+            } else {
+                formTitle.innerText = "Login";
+                toggleText.innerHTML = 'Don\'t have an account? <a href="#" onclick="toggleForm()">Register here</a>';
+                isLogin = true;
+            }
+        }
+
+        async function handleLogin() {
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+            const url = isLogin ? '/login' : '/register';
+
+            const response = await fetch(url, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ username, password })
+            });
+
+            const result = await response.json();
+            alert(result.message);
+            if (result.success && isLogin) window.location.href = '/';
+        }
+
+        // Smooth scrolling
+        document.querySelectorAll('.navbar a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                window.scrollTo({
+                    top: targetElement.offsetTop - document.getElementById('navbar').offsetHeight,
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+    </script>  
+      <script scr="sever.js"></script> 
+</body>
+</html>
